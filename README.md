@@ -1,4 +1,4 @@
-#Using FlyEM Simulation Construction
+# CompressEM
 
 ## Introduction
 
@@ -15,22 +15,27 @@ After following the directions in the NEURON installation documentation, then cl
 To start the program installation process, run the following commands:
 
 ```
-cd em_neuron
+cd CompressEM
 nrnivmodl mod
-python installationdir.py```
+python installationdir.py
+```
 
 The command `nrnivmodl mod` will compile the special mods that were created for the FlyEM model.  The `python installationdir.py` command is for saving the directory structure of where files are in the program.   An example of the inputs is below:
 
-```Please type location of program location: ~/em_neuron/
+```
+Please type location of program location: ~/CompressEM/
 Please type annotated synapse file name: annotations-synapse.json
 Please type annotated body file name: annotations-body.json
-Please type neuron key ID file name: keys.json```
+Please type neuron key ID file name: keys.json
+```
 
 To run an example of the network simulation:
 
-```export PYTHONHOME=/usr
-python savedata.py      #to convert data for em_neuron to use
+```
+export PYTHONHOME=/usr
+python savedata.py      #to convert data for CompressEM to use
 python graphconvert.py  #this is to graph what neuron connects to what
 python columncreate.py  #this is to grab cells in the column dataset
 python columndata.py    #this is to create a dataset for column simulations
-./x86_64/special -python flybot.py #this is to run the simulation```
+./x86_64/special -python nodetest.py 0 #this is to run the simulation of node network with stimuli right to left
+```
