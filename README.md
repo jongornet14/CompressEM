@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a tutorial how to use the em_neuron program.  This program uses [NEURON](https://www.neuron.yale.edu/neuron/).
+This is a tutorial how to use the CompressEM program.  This program uses [NEURON](https://www.neuron.yale.edu/neuron/).  This is the code for the paper [Simulating Extracted Connectomes](https://www.biorxiv.org/content/early/2017/08/17/177113).  
 
 ## Installation
 
