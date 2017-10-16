@@ -21,6 +21,7 @@ datadict['bodyname']    = str(programloc) + '/data/' + str(bodyname)
 datadict['totaldata']   = str(programloc) + '/data/simdata/' + 'datafile.p'
 datadict['programloc']  = str(programloc)
 datadict['dataloc']     = str(programloc) + '/data/'
+datadict['keys']        = str(programloc) + '/data/keys.json'
 
 fileloc = open('locationdic.json', 'w')
 simplejson.dump(datadict, fileloc)
@@ -29,5 +30,3 @@ fileloc.close()
 fileloc = open('structneur/datatools/locationdic.json', 'w')
 simplejson.dump(datadict, fileloc)
 fileloc.close()
-
-#dataconverter.changedata(synname,bodyname,keyname,totaldata)
