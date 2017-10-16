@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a tutorial how to use the em_neuron program.  This program uses [NEURON](https://www.neuron.yale.edu/neuron/).
+This is a tutorial how to use the CompressEM program.  This program uses [NEURON](https://www.neuron.yale.edu/neuron/).  This is the code for the paper [Simulating Extracted Connectomes](https://www.biorxiv.org/content/early/2017/08/17/177113).  
 
 ## Installation
 
@@ -20,14 +20,7 @@ nrnivmodl mod
 python installationdir.py
 ```
 
-The command `nrnivmodl mod` will compile the special mods that were created for the FlyEM model.  The `python installationdir.py` command is for saving the directory structure of where files are in the program.   An example of the inputs is below:
-
-```
-Please type location of program location: ~/CompressEM/
-Please type annotated synapse file name: annotations-synapse.json
-Please type annotated body file name: annotations-body.json
-Please type neuron key ID file name: keys.json
-```
+The command `nrnivmodl mod` will compile the special mods that were created for the FlyEM model.  The `python installationdir.py` command is for saving the directory structure of where files are in the program.   
 
 To run an example of the network simulation:
 
