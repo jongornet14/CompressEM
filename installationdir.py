@@ -26,4 +26,8 @@ fileloc = open('locationdic.json', 'w')
 simplejson.dump(datadict, fileloc)
 fileloc.close()
 
+fileloc = open('structneur/datatools/locationdic.json', 'w')
+simplejson.dump(datadict, fileloc)
+fileloc.close()
+
 #dataconverter.changedata(synname,bodyname,keyname,totaldata)
